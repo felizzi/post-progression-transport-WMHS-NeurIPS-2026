@@ -1,0 +1,382 @@
+{
+  "part0_published": [
+    {
+      "regime": "regime S1 balanced, prevalence 0.35",
+      "subgroup": "overall",
+      "pfs_hr": 0.6297,
+      "os_hr": 0.575,
+      "os_event_pct": 38.0,
+      "n": 240000
+    },
+    {
+      "regime": "regime S1 balanced, prevalence 0.35",
+      "subgroup": "biomarker wt",
+      "pfs_hr": 0.633,
+      "os_hr": 0.4366,
+      "os_event_pct": 38.4,
+      "n": 156065
+    },
+    {
+      "regime": "regime S1 balanced, prevalence 0.35",
+      "subgroup": "biomarker mut",
+      "pfs_hr": 0.6236,
+      "os_hr": 0.9727,
+      "os_event_pct": 37.4,
+      "n": 83935
+    },
+    {
+      "regime": "regime S2 offsetting, prevalence 0.35",
+      "subgroup": "overall",
+      "pfs_hr": 0.6297,
+      "os_hr": 0.5816,
+      "os_event_pct": 36.9,
+      "n": 240000
+    },
+    {
+      "regime": "regime S2 offsetting, prevalence 0.35",
+      "subgroup": "biomarker wt",
+      "pfs_hr": 0.633,
+      "os_hr": 0.384,
+      "os_event_pct": 36.1,
+      "n": 156065
+    },
+    {
+      "regime": "regime S2 offsetting, prevalence 0.35",
+      "subgroup": "biomarker mut",
+      "pfs_hr": 0.6236,
+      "os_hr": 1.2349,
+      "os_event_pct": 38.3,
+      "n": 83935
+    },
+    {
+      "regime": "regime S3 classic, prevalence 0.35",
+      "subgroup": "overall",
+      "pfs_hr": 0.6297,
+      "os_hr": 0.8411,
+      "os_event_pct": 36.8,
+      "n": 240000
+    },
+    {
+      "regime": "regime S3 classic, prevalence 0.35",
+      "subgroup": "biomarker wt",
+      "pfs_hr": 0.633,
+      "os_hr": 0.6163,
+      "os_event_pct": 36.1,
+      "n": 156065
+    },
+    {
+      "regime": "regime S3 classic, prevalence 0.35",
+      "subgroup": "biomarker mut",
+      "pfs_hr": 0.6236,
+      "os_hr": 1.5184,
+      "os_event_pct": 38.1,
+      "n": 83935
+    }
+  ],
+  "part1_switching": [
+    {
+      "regime": "S1 balanced",
+      "arm1_rate": 0.3405,
+      "arm0_rate": 0.34,
+      "marginal_diff": 0.0005,
+      "flagged": "no"
+    },
+    {
+      "regime": "S2 offsetting",
+      "arm1_rate": 0.3996,
+      "arm0_rate": 0.4008,
+      "marginal_diff": -0.0012,
+      "flagged": "no"
+    },
+    {
+      "regime": "S3 classic",
+      "arm1_rate": 0.1697,
+      "arm0_rate": 0.6042,
+      "marginal_diff": -0.4345,
+      "flagged": "YES"
+    }
+  ],
+  "part5_estimator_families": [
+    {
+      "source": "S1 balanced",
+      "target": "S1 balanced",
+      "n_rep": 10,
+      "MAIC_mean_bias": 0.1147,
+      "MAIC_sd": 0.1222,
+      "STC_mean_bias": -0.2228,
+      "STC_sd": 0.1193,
+      "AIPW_mean_bias": -0.0075,
+      "AIPW_sd": 0.1518,
+      "ML_mean_bias": 0.1618,
+      "ML_sd": 0.1271
+    },
+    {
+      "source": "S2 offsetting",
+      "target": "S2 offsetting",
+      "n_rep": 10,
+      "MAIC_mean_bias": 0.0521,
+      "MAIC_sd": 0.1422,
+      "STC_mean_bias": 0.1702,
+      "STC_sd": 0.1069,
+      "AIPW_mean_bias": -0.0195,
+      "AIPW_sd": 0.1525,
+      "ML_mean_bias": 0.1158,
+      "ML_sd": 0.1355
+    },
+    {
+      "source": "S1 balanced",
+      "target": "S2 offsetting",
+      "n_rep": 10,
+      "MAIC_mean_bias": 0.9498,
+      "MAIC_sd": 0.1203,
+      "STC_mean_bias": 0.6123,
+      "STC_sd": 0.1192,
+      "AIPW_mean_bias": 0.8276,
+      "AIPW_sd": 0.1357,
+      "ML_mean_bias": 0.9969,
+      "ML_sd": 0.1237
+    },
+    {
+      "source": "S2 offsetting",
+      "target": "S1 balanced",
+      "n_rep": 10,
+      "MAIC_mean_bias": -0.783,
+      "MAIC_sd": 0.1409,
+      "STC_mean_bias": -0.6649,
+      "STC_sd": 0.1106,
+      "AIPW_mean_bias": -0.8546,
+      "AIPW_sd": 0.1632,
+      "ML_mean_bias": -0.7192,
+      "ML_sd": 0.1348
+    }
+  ],
+  "part5_double_robustness": [
+    {
+      "scenario": "both correct",
+      "bias": -0.0772
+    },
+    {
+      "scenario": "weights correct, model poor",
+      "bias": -0.0502
+    },
+    {
+      "scenario": "model correct, weights poor",
+      "bias": 0.0719
+    },
+    {
+      "scenario": "both poor",
+      "bias": 0.0571
+    }
+  ],
+  "part3b_transport_replicated": [
+    {
+      "source": "S1 balanced",
+      "target": "S1 balanced",
+      "mean_bias": 0.0922,
+      "sd": 0.1426,
+      "n_rep": 20,
+      "mean_ess_pct": 49.3
+    },
+    {
+      "source": "S2 offsetting",
+      "target": "S2 offsetting",
+      "mean_bias": 0.0218,
+      "sd": 0.1679,
+      "n_rep": 20,
+      "mean_ess_pct": 49.3
+    },
+    {
+      "source": "S1 balanced",
+      "target": "S2 offsetting",
+      "mean_bias": 0.9491,
+      "sd": 0.1315,
+      "n_rep": 20,
+      "mean_ess_pct": 49.3
+    },
+    {
+      "source": "S2 offsetting",
+      "target": "S1 balanced",
+      "mean_bias": -0.8351,
+      "sd": 0.1787,
+      "n_rep": 20,
+      "mean_ess_pct": 49.3
+    },
+    {
+      "source": "S3 classic",
+      "target": "S1 balanced",
+      "mean_bias": -2.7476,
+      "sd": 0.169,
+      "n_rep": 20,
+      "mean_ess_pct": 49.3
+    }
+  ],
+  "part6_policy_values": [
+    {
+      "policy": "q = 0 (no therapy)",
+      "value_source": 3.7813,
+      "value_target": 1.7039,
+      "n_rep": 6
+    },
+    {
+      "policy": "q = S1 balanced",
+      "value_source": 3.6405,
+      "value_target": 1.4925,
+      "n_rep": 6
+    },
+    {
+      "policy": "q = S2 offsetting",
+      "value_source": 3.6153,
+      "value_target": 0.6552,
+      "n_rep": 6
+    },
+    {
+      "policy": "q = S3 classic",
+      "value_source": 1.0429,
+      "value_target": -1.2615,
+      "n_rep": 6
+    }
+  ],
+  "part7_regime_aware": [
+    {
+      "source": "S1 balanced",
+      "target": "S1 balanced",
+      "maic_bias": 0.0247,
+      "regime_aware_bias": -0.0134,
+      "n_rep": 6,
+      "overlap_violations": 0
+    },
+    {
+      "source": "S2 offsetting",
+      "target": "S2 offsetting",
+      "maic_bias": 0.0055,
+      "regime_aware_bias": -0.0222,
+      "n_rep": 6,
+      "overlap_violations": 0
+    },
+    {
+      "source": "S1 balanced",
+      "target": "S2 offsetting",
+      "maic_bias": 0.9037,
+      "regime_aware_bias": -0.0515,
+      "n_rep": 6,
+      "overlap_violations": 0
+    },
+    {
+      "source": "S2 offsetting",
+      "target": "S1 balanced",
+      "maic_bias": -0.8735,
+      "regime_aware_bias": 0.0305,
+      "n_rep": 6,
+      "overlap_violations": 0
+    },
+    {
+      "source": "S3 classic",
+      "target": "S1 balanced",
+      "maic_bias": -2.7449,
+      "regime_aware_bias": 0.0183,
+      "n_rep": 6,
+      "overlap_violations": 0
+    }
+  ],
+  "part8_ope_estimators": [
+    {
+      "source": "S1 balanced",
+      "target": "S1 balanced",
+      "n_rep": 6,
+      "MAIC_bias": 0.0512,
+      "direct_bias": -0.0693,
+      "ipw_bias": 0.0512,
+      "dr_bias": -0.0564,
+      "MAIC_sd": 0.2189,
+      "direct_sd": 0.3394,
+      "ipw_sd": 0.2189,
+      "dr_sd": 0.2845
+    },
+    {
+      "source": "S1 balanced",
+      "target": "S2 offsetting",
+      "n_rep": 6,
+      "MAIC_bias": 0.9249,
+      "direct_bias": 0.0127,
+      "ipw_bias": 0.0441,
+      "dr_bias": -0.1159,
+      "MAIC_sd": 0.1879,
+      "direct_sd": 0.2376,
+      "ipw_sd": 0.2075,
+      "dr_sd": 0.3392
+    },
+    {
+      "source": "S2 offsetting",
+      "target": "S1 balanced",
+      "n_rep": 6,
+      "MAIC_bias": -0.8677,
+      "direct_bias": -0.0314,
+      "ipw_bias": -0.0392,
+      "dr_bias": -0.1098,
+      "MAIC_sd": 0.1432,
+      "direct_sd": 0.3335,
+      "ipw_sd": 0.1838,
+      "dr_sd": 0.2964
+    },
+    {
+      "source": "S3 classic",
+      "target": "S1 balanced",
+      "n_rep": 6,
+      "MAIC_bias": -2.7756,
+      "direct_bias": -0.0411,
+      "ipw_bias": -0.0662,
+      "dr_bias": -0.0774,
+      "MAIC_sd": 0.1436,
+      "direct_sd": 0.3215,
+      "ipw_sd": 0.1666,
+      "dr_sd": 0.2983
+    }
+  ],
+  "part9_sensitivity": [
+    {
+      "q_target_biomarker_positive": 0.0,
+      "transported_effect": 1.7302,
+      "truth": 1.661
+    },
+    {
+      "q_target_biomarker_positive": 0.113,
+      "transported_effect": 1.6771,
+      "truth": 1.7235
+    },
+    {
+      "q_target_biomarker_positive": 0.225,
+      "transported_effect": 1.6747,
+      "truth": 1.594
+    },
+    {
+      "q_target_biomarker_positive": 0.338,
+      "transported_effect": 1.6091,
+      "truth": 1.6098
+    },
+    {
+      "q_target_biomarker_positive": 0.45,
+      "transported_effect": 1.5491,
+      "truth": 1.5354
+    },
+    {
+      "q_target_biomarker_positive": 0.562,
+      "transported_effect": 1.4716,
+      "truth": 1.6908
+    },
+    {
+      "q_target_biomarker_positive": 0.675,
+      "transported_effect": 1.375,
+      "truth": 1.6134
+    },
+    {
+      "q_target_biomarker_positive": 0.787,
+      "transported_effect": 1.294,
+      "truth": 1.6155
+    },
+    {
+      "q_target_biomarker_positive": 0.9,
+      "transported_effect": 1.3174,
+      "truth": 1.501
+    }
+  ]
+}

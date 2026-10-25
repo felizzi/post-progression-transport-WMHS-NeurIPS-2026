@@ -1,0 +1,5 @@
+n_rep,policy,value_source,value_target
+6,q = 0 (no therapy),3.7813,1.7039
+6,q = S1 balanced,3.6405,1.4925
+6,q = S2 offsetting,3.6153,0.6552
+6,q = S3 classic,1.0429,-1.2615

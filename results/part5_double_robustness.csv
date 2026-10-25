@@ -1,0 +1,5 @@
+bias,scenario
+-0.0772,both correct
+-0.0502,weights correct, model poor
+0.0719,model correct, weights poor
+0.0571,both poor

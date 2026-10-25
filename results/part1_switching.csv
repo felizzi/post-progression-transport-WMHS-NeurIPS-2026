@@ -1,0 +1,4 @@
+arm0_rate,arm1_rate,flagged,marginal_diff,regime
+0.34,0.3405,no,0.0005,S1 balanced
+0.4008,0.3996,no,-0.0012,S2 offsetting
+0.6042,0.1697,YES,-0.4345,S3 classic

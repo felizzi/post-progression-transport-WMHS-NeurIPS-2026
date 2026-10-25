@@ -1,0 +1,6 @@
+mean_bias,mean_ess_pct,n_rep,sd,source,target
+0.0922,49.3,20,0.1426,S1 balanced,S1 balanced
+0.0218,49.3,20,0.1679,S2 offsetting,S2 offsetting
+0.9491,49.3,20,0.1315,S1 balanced,S2 offsetting
+-0.8351,49.3,20,0.1787,S2 offsetting,S1 balanced
+-2.7476,49.3,20,0.169,S3 classic,S1 balanced

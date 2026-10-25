@@ -1,0 +1,5 @@
+MAIC_bias,MAIC_sd,direct_bias,direct_sd,dr_bias,dr_sd,ipw_bias,ipw_sd,n_rep,source,target
+0.0512,0.2189,-0.0693,0.3394,-0.0564,0.2845,0.0512,0.2189,6,S1 balanced,S1 balanced
+0.9249,0.1879,0.0127,0.2376,-0.1159,0.3392,0.0441,0.2075,6,S1 balanced,S2 offsetting
+-0.8677,0.1432,-0.0314,0.3335,-0.1098,0.2964,-0.0392,0.1838,6,S2 offsetting,S1 balanced
+-2.7756,0.1436,-0.0411,0.3215,-0.0774,0.2983,-0.0662,0.1666,6,S3 classic,S1 balanced

@@ -1,0 +1,6 @@
+maic_bias,n_rep,overlap_violations,regime_aware_bias,source,target
+0.0247,6,0,-0.0134,S1 balanced,S1 balanced
+0.0055,6,0,-0.0222,S2 offsetting,S2 offsetting
+0.9037,6,0,-0.0515,S1 balanced,S2 offsetting
+-0.8735,6,0,0.0305,S2 offsetting,S1 balanced
+-2.7449,6,0,0.0183,S3 classic,S1 balanced

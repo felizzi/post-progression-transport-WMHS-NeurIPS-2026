@@ -1,0 +1,10 @@
+n,os_event_pct,os_hr,pfs_hr,regime,subgroup
+240000,38.0,0.575,0.6297,regime S1 balanced, prevalence 0.35,overall
+156065,38.4,0.4366,0.633,regime S1 balanced, prevalence 0.35,biomarker wt
+83935,37.4,0.9727,0.6236,regime S1 balanced, prevalence 0.35,biomarker mut
+240000,36.9,0.5816,0.6297,regime S2 offsetting, prevalence 0.35,overall
+156065,36.1,0.384,0.633,regime S2 offsetting, prevalence 0.35,biomarker wt
+83935,38.3,1.2349,0.6236,regime S2 offsetting, prevalence 0.35,biomarker mut
+240000,36.8,0.8411,0.6297,regime S3 classic, prevalence 0.35,overall
+156065,36.1,0.6163,0.633,regime S3 classic, prevalence 0.35,biomarker wt
+83935,38.1,1.5184,0.6236,regime S3 classic, prevalence 0.35,biomarker mut
